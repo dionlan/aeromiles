@@ -1,0 +1,9 @@
+<mat-card class="card-busca" (click)="onDetalheClick()">
+  <img mat-card-image src="assets/images/{{ sale.image }}" alt="{{ sale.destination }}">
+  <mat-card-content>
+    <ul>
+      <li class="destination">{{ sale.destination }}</li>
+      <li class="price">A partir de R$ {{ sale.price }}</li>
+    </ul>
+  </mat-card-content>
+</mat-card>

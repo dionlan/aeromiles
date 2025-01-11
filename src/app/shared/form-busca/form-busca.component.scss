@@ -1,0 +1,54 @@
+.form-busca {
+    margin: 40px 0;
+    display: block;
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 16px 0;
+    }
+
+    .drop-container {
+        max-width: 230px;
+    }
+
+    .input-container {
+        margin-bottom: -1.25em;
+    }
+
+    /* Adicionando estilo para o botão */
+    button.mat-flat-button {
+        height: 56px;
+        /* Ajuste a altura conforme a altura dos inputs */
+        line-height: 0;
+        /* Remove a linha de altura para o texto */
+        display: flex;
+        /* Alinha o conteúdo dentro do botão */
+        align-items: center;
+        /* Centraliza verticalmente o texto no botão */
+        justify-content: center;
+        /* Centraliza horizontalmente o texto no botão */
+        padding: 0 16px;
+        /* Padding horizontal para o botão */
+    }
+
+    .mat-button-toggle-checked {
+        background-color: #F7F2FA;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    mat-chip {
+        .inner {
+            overflow: visible;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+    }
+}

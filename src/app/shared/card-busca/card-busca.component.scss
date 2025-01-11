@@ -1,0 +1,44 @@
+.card-busca {
+  max-width: 320px;
+  background-color: #FEF7FF;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Sombra inicial */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(1.02);
+    /* Leve zoom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Aumenta a sombra */
+  }
+
+  img {
+    border-radius: 12px 12px 0 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+
+    li.destination {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      color: #1D1B20;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    li.price {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #1D1B20;
+      text-align: center;
+    }
+  }
+}
