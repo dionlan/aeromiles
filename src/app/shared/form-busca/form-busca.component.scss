@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #3F51B5; /* Cor principal */
+    --secondary-color: #7986CB; /* Cor secundária */
+    --background-color: #F5F5F5; /* Fundo claro */
+    --text-color: #212121; /* Texto padrão */
+    --border-color: #D1D5DB; /* Bordas suaves */
+}
+
 .form-busca {
     margin: 40px 0;
     display: block;
@@ -5,8 +13,9 @@
     .flex-container {
         display: flex;
         align-items: center;
-        gap: 12px;
-        margin: 16px 0;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 24px 0;
     }
 
     .drop-container {
@@ -15,26 +24,25 @@
 
     .input-container {
         margin-bottom: -1.25em;
+        flex: 1;
+        /* Permite ajuste proporcional */
     }
 
-    /* Adicionando estilo para o botão */
-    button.mat-flat-button {
+    button.buscar-button {
         height: 56px;
-        /* Ajuste a altura conforme a altura dos inputs */
+        /* Igual aos inputs */
         line-height: 0;
-        /* Remove a linha de altura para o texto */
         display: flex;
-        /* Alinha o conteúdo dentro do botão */
         align-items: center;
-        /* Centraliza verticalmente o texto no botão */
         justify-content: center;
-        /* Centraliza horizontalmente o texto no botão */
-        padding: 0 16px;
-        /* Padding horizontal para o botão */
+        padding: 0 24px;
+        /* Maior largura */
+        flex-shrink: 0;
+        /* Impede que o botão diminua */
     }
 
     .mat-button-toggle-checked {
-        background-color: #F7F2FA;
+        background-color: #C5CAE9;
     }
 
     h2 {
@@ -51,4 +59,21 @@
             cursor: pointer;
         }
     }
+}
+
+.circular-button {
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.circular-button:hover {
+    background-color: #E8EAF6;
+    border-color: #7986CB;
 }

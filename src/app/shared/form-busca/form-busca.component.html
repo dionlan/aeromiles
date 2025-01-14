@@ -5,7 +5,7 @@
       <mat-button-toggle-group aria-label="Tipo de passagem" formControlName="somenteIda">
         <mat-button-toggle [value]="false">
           <mat-icon *ngIf="!formBuscaService.formBusca.get('somenteIda')?.value">check</mat-icon>
-          Ida e Volta
+          Ida e volta
         </mat-button-toggle>
         <mat-button-toggle [value]="true">
           <mat-icon *ngIf="formBuscaService.formBusca.get('somenteIda')?.value">check</mat-icon>
@@ -28,7 +28,7 @@
         <app-dropdown-uf label="Origem" placeholder="Origem" iconePrefixo="flight_takeoff"
           [control]="formBuscaService.obterControle('origem')" />
       </div>
-      <button mat-icon-button (click)="formBuscaService.trocarOrigemDestino()">
+      <button mat-icon-button class="circular-button" (click)="formBuscaService.trocarOrigemDestino()">
         <mat-icon>sync_alt</mat-icon>
       </button>
       <div class="drop-container">
@@ -47,7 +47,7 @@
         <mat-datepicker-toggle matIconSuffix [for]="volta"></mat-datepicker-toggle>
         <mat-datepicker #volta></mat-datepicker>
       </mat-form-field>
-      <button mat-flat-button extended color="primary">BUSCAR</button>
+      <button mat-flat-button class="buscar-button" color="primary">BUSCAR</button>
     </div>
   </form>
 </app-card>
